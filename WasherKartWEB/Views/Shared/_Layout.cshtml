@@ -1,9 +1,24 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http
+@using WasherKartUtility.Utilities;
+
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var lsProfileName = "";
+    var lsProfileBalance = "";
+    var lsId = "";
+    if (User.Claims.Count() > 0)
+    {
+        lsId = User.FindFirst(CommonConstant.SessionConstant.Id).Value.ToString();
+        lsProfileName = User.FindFirst(CommonConstant.SessionConstant.stName).Value.ToString();
+        lsProfileBalance = User.FindFirst(CommonConstant.SessionConstant.Balance).Value.ToString();
+    }
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - WasherKartWEB</title>
+    <title>@ViewData["Title"] - WasherKart</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <meta charset="utf-8">
@@ -29,50 +44,46 @@
                 <div class="row">
                     <div class="col-md-12">
                         <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">@*<img src="images/logo.png" alt="logo">*@Washerkart</a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="ti-menu"></span>
                             </button>
                             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                                 <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="listing.html">Explore</a>
-                                    </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Pages
+                                            Customer
                                             <span class="ti-angle-down"></span>
                                         </a>
                                         <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="index-two.html">Home Style Two</a>
-                                            <a class="dropdown-item" href="listing.html">Listing</a>
-                                            <a class="dropdown-item" href="detail.html">Listing Detail</a>
-                                            <a class="dropdown-item" href="add-listing.html">Add new Listing</a>
-                                            <a class="dropdown-item" href="payment-method.html">Payment Method</a>
-                                            <a class="dropdown-item" href="thank-you.html">Thank You</a>
-                                            <a class="dropdown-item" href="contact.html">Contact</a>
-                                            <a class="dropdown-item" href="pricing.html">Pricing</a>
-                                            <a class="dropdown-item" href="404.html">404</a>
+                                            <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="SignIn">Sign In</a>
+                                            <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Signup">Sign Up</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Shop
+                                            <span class="ti-angle-down"></span>
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="SignIn">Sign In</a>
+                                            <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Signup">Sign Up</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            WaskerKart
+                                            <span class="ti-angle-down"></span>
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="About">About Us</a>
+                                            <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="OurMission">Our Mission</a>
+                                            <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="OurVision">Our Vision</a>
                                         </div>
                                     </li>
                                     <li class="nav-item active">
-                                        <a class="nav-link" href="contact.html">Help</a>
+                                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="ContactUs">Contact Us</a>
                                     </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Blog
-                                            <span class="ti-angle-down"></span>
-                                        </a>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="blog.html">Blog Listing</a>
-                                            <a class="dropdown-item" href="blog-two.html">Blog Layout Two</a>
-                                            <a class="dropdown-item" href="blog-detail.html">Blog Detail</a>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="login.html" data-toggle="modal" data-target="#exampleModal">Login</a>
-                                    </li>
-                                    <li><a href="add-listing.html" class="btn btn-outline-danger top-btn"><span class="ti-plus"></span> Add Listing</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -145,11 +156,9 @@
             </div>
         </div>
     </div>
-    <section class="hero-wrap d-flex align-items-center">
-        <div class="container">
-            @RenderBody()
-        </div>
-    </section>
+
+    @RenderBody()
+
     <footer class="main-block gray">
         <div class="container-fluid">
             <div class="row">
@@ -178,8 +187,9 @@
                 <div class="col-md-12">
                     <div class="copyright">
                         <p>Copyright © 2023 WasherKart. All rights reserved</p>
-                        <a href="#">Privacy</a>
-                        <a href="#">Terms</a>
+                        <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        <a asp-area="" asp-controller="Home" asp-action="TermsCustomer">Terms</a>
+                        <a asp-area="" asp-controller="Home" asp-action="Refund">Refund</a>
                     </div>
                 </div>
             </div>
@@ -188,10 +198,33 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7955888e0e1ef313","version":"2022.11.3","r":1,"token":"1a2187940c214caa9d3fed19b4904902","si":100}' crossorigin="anonymous"></script>
+    <script async defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7955888e0e1ef313","version":"2022.11.3","r":1,"token":"1a2187940c214caa9d3fed19b4904902","si":100}' crossorigin="anonymous"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <link async href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    @if (TempData["Message"] != null)
+    {
+        @if (Convert.ToInt32(TempData["ResultCode"]) == (int)WasherKartUtility.Utilities.CommonFunctions.ActionResponse.Error)
+        {
+            <script type="text/javascript">
+                toastr.error("@(TempData["Message"] as string)");
+            </script>
+        }
+        else if (Convert.ToInt32(TempData["ResultCode"]) == (int)WasherKartUtility.Utilities.CommonFunctions.ActionResponse.Warning)
+        {
+            <script type="text/javascript">
+                toastr.warning("@(TempData["Message"] as string)");
+            </script>
+        }
+        else
+        {
+            <script type="text/javascript">
+                toastr.success("@(TempData["Message"] as string)");
+            </script>
+        }
+    }
 </body>
 </html>
