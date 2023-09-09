@@ -135,7 +135,7 @@ footer.main-block {
 }
 
     .nav-item a:hover {
-        color: #ff6b6b;
+        color: #0b6985;
         background: 0 0
     }
 
@@ -161,8 +161,8 @@ footer.main-block {
 }
 
 .btn-outline-danger {
-    color: #ff6b6b;
-    border-color: #ff6b6b;
+    color: #0b6985;
+    border-color: #0b6985;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
@@ -173,8 +173,8 @@ footer.main-block {
 
     .btn-outline-danger:hover, .btn-outline-danger:focus {
         color: #fff;
-        border-color: #ff6b6b;
-        background: #ff6b6b;
+        border-color: #0b6985;
+        background: #0b6985;
         -webkit-box-shadow: none;
         box-shadow: none
     }
@@ -370,7 +370,7 @@ footer.main-block {
     position: absolute;
     top: 29%;
     right: 3%;
-    background: #ff6b6b;
+    background: #0b6985;
     border-radius: 6px;
     text-align: center;
     -webkit-transition: .3s;
@@ -386,7 +386,7 @@ footer.main-block {
 }
 
 .btn-search:hover {
-    background: #ea5555;
+    background: #57b844;
     color: #fff
 }
 
@@ -626,7 +626,7 @@ footer.main-block {
     }
 
 .card-rating-red, .card-rating-yellow {
-    background: #ff6b6b;
+    background: #0b6985;
     padding: 4px 16px;
     color: #fff;
     font-weight: 600;
@@ -663,7 +663,7 @@ footer.main-block {
 .card-bottom span {
     float: right;
     font-size: 13px;
-    color: #ff6b6b;
+    color: #0b6985;
     text-transform: uppercase
 }
 
@@ -733,7 +733,7 @@ footer.main-block {
 .howit-img-block {
     width: 86px;
     height: 86px;
-    border: 1px solid #ff6b6b;
+    border: 1px solid #0b6985;
     background: #fff;
     border-radius: 50%;
     padding: 22px;
@@ -747,7 +747,7 @@ footer.main-block {
 }
 
 .howit-icon-wrap:hover .howit-img-block {
-    background: #ff6b6b
+    background: #0b6985
 }
 
 .howit-icon-wrap:hover .howit-svg path {
@@ -769,7 +769,7 @@ footer.main-block {
     }
 
         .search-bottom-title a:hover {
-            color: #ff6b6b
+            color: #0b6985
         }
 
 .news-block {
@@ -826,7 +826,7 @@ footer.main-block {
 
 .btn-simple {
     font-size: 22px;
-    color: #ff6b6b;
+    color: #0b6985;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s
@@ -839,7 +839,7 @@ footer.main-block {
 }
 
 .btn-simple:hover, .btn-simple:focus {
-    color: #ea5555;
+    color: #57b844;
     -webkit-box-shadow: none;
     box-shadow: none
 }
@@ -849,7 +849,7 @@ footer.main-block {
 }
 
     .btn-wrap2 .btn-simple {
-        background: #ff6b6b;
+        background: #0b6985;
         padding: 20px 36px;
         color: #fff;
         -webkit-transition: .3s;
@@ -858,7 +858,7 @@ footer.main-block {
     }
 
         .btn-wrap2 .btn-simple:hover {
-            background: #ea5555
+            background: #57b844
         }
 
 footer {
@@ -1134,10 +1134,10 @@ footer {
         top: 100px;
         right: 20px;
         z-index: 10;
-        color: #ff6b6b;
+        color: #0b6985;
         background: #fff;
         padding: 8px;
-        border: solid 1px #ff6b6b;
+        border: solid 1px #0b6985;
         border-radius: 50%;
         line-height: 0;
         text-decoration: none
@@ -1176,7 +1176,7 @@ footer {
 }
 
 .reserve-block p span {
-    color: #ff6b6b
+    color: #0b6985
 }
 
 .reserve-description {
@@ -1241,13 +1241,13 @@ footer {
 }
 
 .review-btn .btn-outline-danger {
-    color: #ff6b6b;
-    border-color: #ff6b6b
+    color: #0b6985;
+    border-color: #0b6985
 }
 
     .review-btn .btn-outline-danger:hover, .review-btn .btn-outline-danger:focus {
         color: #fff;
-        background: #ff6b6b;
+        background: #0b6985;
         -webkit-box-shadow: none;
         box-shadow: none;
         outline: none
@@ -1284,7 +1284,7 @@ footer {
 }
 
     .booking-your-review span {
-        color: #ff6b6b
+        color: #0b6985
     }
 
 .your-rating-wrap {
@@ -1402,7 +1402,7 @@ hr {
 .your-rating-text {
     display: inline-block;
     font-size: 15px;
-    color: #ff6b6b;
+    color: #0b6985;
     margin: 0 0 0 8px
 }
 
@@ -1569,7 +1569,7 @@ hr {
 }
 
 .round-icon-red {
-    background: #ff6b6b !important
+    background: #0b6985 !important
 }
 
 .round-icon-orange {
@@ -1592,7 +1592,7 @@ hr {
 }
 
 .customer-rating-red {
-    background: #ff6b6b !important
+    background: #0b6985 !important
 }
 
 .customer-description {
@@ -1648,14 +1648,14 @@ hr {
     display: block;
     padding: 16px;
     margin: 12px 16px;
-    border: 2px solid #ff6b6b;
-    color: #ff6b6b;
+    border: 2px solid #0b6985;
+    color: #0b6985;
     font-weight: 400
 }
 
     .btn-contact:hover {
-        background: #ff6b6b;
-        border: 2px solid #ff6b6b
+        background: #0b6985;
+        border: 2px solid #0b6985
     }
 
 .follow {
@@ -1690,7 +1690,7 @@ hr {
 }
 
 .follow a {
-    color: #ff6b6b;
+    color: #0b6985;
     text-align: center;
     display: block;
     font-size: 14px;
@@ -1713,14 +1713,14 @@ hr {
     }
 
 .btn-danger {
-    background: #ff6b6b;
-    border: #ff6b6b
+    background: #0b6985;
+    border: #0b6985
 }
 
     .btn-danger:hover, .btn-danger:focus {
         color: #fff;
-        border-color: #ea5555;
-        background: #ea5555;
+        border-color: #57b844;
+        background: #57b844;
         outline: none;
         -webkit-box-shadow: none;
         box-shadow: none
@@ -1745,11 +1745,11 @@ hr {
 .pricing-head {
     text-align: center;
     padding: 35px 0 20px;
-    border-top: 5px solid #ea5555
+    border-top: 5px solid #57b844
 }
 
     .pricing-head h2 {
-        color: #ea5555;
+        color: #57b844;
         margin: 0;
         font-size: 50px;
         font-weight: 400
@@ -1866,7 +1866,7 @@ hr {
 
     .error-404 h2 {
         font-size: 140px;
-        color: #ff6b6b
+        color: #0b6985
     }
 
 @media(max-width:992px) {
@@ -1902,7 +1902,7 @@ hr {
 
     .address-box span {
         font-size: 36px;
-        color: #ff6b6b
+        color: #0b6985
     }
 
     .address-box p {
@@ -1916,8 +1916,8 @@ hr {
 
 .btn-submit {
     color: #fff;
-    background: #ff6b6b;
-    border: 1px solid #ff6b6b;
+    background: #0b6985;
+    border: 1px solid #0b6985;
     padding: 12px 20px;
     border-radius: 3px;
     -webkit-transition: .3s;
@@ -1927,7 +1927,7 @@ hr {
 }
 
     .btn-submit:hover {
-        background: #ea5555
+        background: #57b844
     }
 
 #map {
@@ -1986,14 +1986,14 @@ hr {
 }
 
 .blog-content_wrap a {
-    color: #ff6b6b;
+    color: #0b6985;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s
 }
 
     .blog-content_wrap a:hover {
-        color: #ea5555;
+        color: #57b844;
         text-decoration: none
     }
 
@@ -2007,30 +2007,30 @@ hr {
 
 .page-link {
     padding: 1rem 1.55rem;
-    color: #ff6b6b
+    color: #0b6985
 }
 
     .page-link:hover, .page-link:active, .page-link:focus {
-        background: #ff6b6b;
-        border-color: #ff6b6b;
+        background: #0b6985;
+        border-color: #0b6985;
         color: #fff;
         outline: none
     }
 
 .page-item.active .page-link {
-    background-color: #ff6b6b;
-    border-color: #ff6b6b
+    background-color: #0b6985;
+    border-color: #0b6985
 }
 
 .blog2-link {
     font-size: 14px;
-    color: #ff6b6b;
+    color: #0b6985;
     margin: 8px 0 0
 }
 
     .blog2-link:hover {
         text-decoration: none;
-        color: #ff6b6b
+        color: #0b6985
     }
 
 .blog2-thumbnail-name {
@@ -2061,7 +2061,7 @@ hr {
     position: absolute;
     left: 20px;
     bottom: 16px;
-    background: #ff6b6b;
+    background: #0b6985;
     color: #fff;
     border-radius: 3px;
     padding: 8px 16px
@@ -2076,7 +2076,7 @@ hr {
     }
 
     .blog-content p a {
-        color: #ff6b6b
+        color: #0b6985
     }
 
         .blog-content p a:hover {
@@ -2093,7 +2093,7 @@ hr {
 }
 
 .blog-text h6 a {
-    color: #ff6b6b
+    color: #0b6985
 }
 
 .blog-share {
@@ -2162,7 +2162,7 @@ hr {
 
     .media-body a {
         display: block;
-        color: #ff6b6b
+        color: #0b6985
     }
 
 .widget-box {
@@ -2179,8 +2179,8 @@ hr {
     border-top-left-radius: 0;
     cursor: pointer;
     border-color: rgba(0,0,0,.15);
-    background: #ff6b6b;
-    border-color: #ff6b6b;
+    background: #0b6985;
+    border-color: #0b6985;
     color: #fff;
     -webkit-transition: .3s;
     -o-transition: .3s;
@@ -2188,9 +2188,9 @@ hr {
 }
 
     .btn-widget:hover {
-        background: #ea5555;
+        background: #57b844;
         color: #fff;
-        border-color: #ea5555
+        border-color: #57b844
     }
 
 .blog-thumb-content {
@@ -2279,7 +2279,7 @@ hr {
 
     .categories a:hover {
         text-decoration: none;
-        color: #ea5555
+        color: #57b844
     }
 
     .categories a span {
@@ -2307,7 +2307,7 @@ hr {
 
     .listing-title span {
         font-size: 32px;
-        color: #ff6b6b
+        color: #0b6985
     }
 
     .listing-title h4 {
@@ -2324,7 +2324,7 @@ hr {
 }
 
     .form-control:focus {
-        border-color: #ff6b6b
+        border-color: #0b6985
     }
 
 .contact-form .form-control {
@@ -2336,7 +2336,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .form-control:focus {
-    border-color: #ff6b6b
+    border-color: #0b6985
 }
 
 .md-checkbox {
@@ -2382,7 +2382,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
     .md-checkbox input[type=checkbox]:checked + label:before {
-        background: #ff6b6b;
+        background: #0b6985;
         border: none
     }
 
@@ -2455,16 +2455,16 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .btn-primary {
-    background: #ff6b6b;
-    border-color: #ff6b6b;
+    background: #0b6985;
+    border-color: #0b6985;
     border-radius: 3px;
     padding: 10px 20px;
     cursor: pointer
 }
 
     .btn-primary:hover, .btn-primary:focus {
-        background: #ea5555;
-        border-color: #ea5555;
+        background: #57b844;
+        border-color: #57b844;
         outline: none;
         -webkit-box-shadow: none;
         box-shadow: none
@@ -2484,7 +2484,7 @@ select.form-control:not([size]):not([multiple]) {
 
     .payment-title span {
         display: inline-block;
-        color: #ff6b6b;
+        color: #0b6985;
         font-size: 22px;
         margin: 0 8px 0 0
     }
@@ -2568,7 +2568,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .total-red {
-    color: #ff6b6b
+    color: #0b6985
 }
 
 .flex-fill {

@@ -29,6 +29,12 @@ namespace WasherKartWEB.Controllers
             return View("~/Views/Home/Index.cshtml");
         }
 
+        [Route("partner")]
+        public IActionResult Partner()
+        {
+            return View("~/Views/Home/Partner.cshtml");
+        }
+
         [Route("about-us")]
         public IActionResult About()
         {
@@ -98,6 +104,48 @@ namespace WasherKartWEB.Controllers
         public IActionResult Refund()
         {
             return View("~/Views/Home/Refund.cshtml");
+        }
+
+        [Route("referral")]
+        public IActionResult Referral()
+        {
+            return View("~/Views/Home/Referral.cshtml");
+        }
+
+        [Route("promotional-offer-and-coupon")]
+        public IActionResult Promotional()
+        {
+            return View("~/Views/Home/Promotional.cshtml");
+        }
+
+        [Route("feature-customer")]
+        public IActionResult FeatureCustomer()
+        {
+            return View("~/Views/Home/FeatureCustomer.cshtml");
+        }
+
+        [Route("feature-shop")]
+        public IActionResult FeatureShop()
+        {
+            return View("~/Views/Home/FeatureShop.cshtml");
+        }
+
+        [Route("feature-referral")]
+        public IActionResult FeatureReferral()
+        {
+            return View("~/Views/Home/FeatureReferral.cshtml");
+        }
+
+        [Route("feature-driver")]
+        public IActionResult FeatureDriver()
+        {
+            return View("~/Views/Home/FeatureDriver.cshtml");
+        }
+
+        [Route("opportunities-for-investor")]
+        public IActionResult Investor()
+        {
+            return View("~/Views/Home/Investor.cshtml");
         }
 
         [Route("coming-soon")]
